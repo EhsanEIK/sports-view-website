@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faListAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Sport = ({ sport, handleAddToList }) => {
     const { name, image, time, totalPlayer } = sport
@@ -17,8 +19,9 @@ const Sport = ({ sport, handleAddToList }) => {
                     <hr />
                 </div>
                 <div className="card-footer p-0">
-                    <button onClick={() => handleAddToList(sport)} className='btn btn-warning rounded-0 w-100'>
-                        <p className='fs-6 fw-semibold mb-0'>Add to List</p>
+                    <button onClick={() => handleAddToList(sport)} className='btn btn-warning rounded-0 w-100 d-flex justify-content-center align-items-center'>
+                        <p className='fs-6 fw-semibold mb-0 me-2'>Add to List</p>
+                        <FontAwesomeIcon icon={faListAlt} />
                     </button>
                 </div>
             </div>
