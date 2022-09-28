@@ -1,7 +1,7 @@
 import React from 'react';
 import Sport from '../Sport/Sport';
 
-const Sports = ({ sports }) => {
+const Sports = ({ sports, handleAddToList }) => {
     return (
         <>
             <h1>All Sports Details</h1>
@@ -9,7 +9,8 @@ const Sports = ({ sports }) => {
                 {
                     sports.map(sport => <Sport
                         key={sport.id}
-                        sport={sport}></Sport>)
+                        sport={sport}
+                        handleAddToList={handleAddToList}></Sport>)
                 }
             </div>
         </>
