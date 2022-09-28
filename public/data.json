@@ -3,42 +3,49 @@
         "id": "633468cb41ab66fc37741556",
         "image": "https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?cs=srgb&dl=pexels-pixabay-46798.jpg&fm=jpg",
         "time": 90,
+        "totalPlayer": 11,
         "name": "Football"
     },
     {
         "id": "633468cb3887fe48c1a1347c",
         "image": "https://media.istockphoto.com/photos/basketball-hoop-net-and-ball-side-view-picture-id1128899308?k=20&m=1128899308&s=612x612&w=0&h=uX2FMYMW4r8NjeTC3FJhmEjq_zQB9U1IsoCcobsxHAo=",
         "time": 48,
+        "totalPlayer": 5,
         "name": "Basketball"
     },
     {
         "id": "633468cbcce19b42cf8ab4d8",
         "image": "https://media.istockphoto.com/photos/cricket-batsman-hits-a-six-picture-id181094694?k=20&m=181094694&s=612x612&w=0&h=uq_TNi3rKhnkMtCu71dJhfjBmBRP1PUy2ZYkfT3TLBI=",
         "time": 180,
+        "totalPlayer": 11,
         "name": "Cricket-T20"
     },
     {
         "id": "633468cb67db7df6a6bda5e3",
         "image": "https://img.freepik.com/free-photo/close-up-tennis-rackets-balls-ground_23-2148218722.jpg?w=2000",
         "time": 150,
+        "totalPlayer": 1,
         "name": "Tennis"
     },
     {
         "id": "633468cba0ad1f9783d34933",
         "image": "https://images.pexels.com/photos/814133/pexels-photo-814133.jpeg",
         "time": 90,
+        "totalPlayer": 1,
         "name": "Chess"
     },
     {
         "id": "633468cb6c566b65ab22d5e0",
         "image": "https://burst.shopifycdn.com/photos/baseball-bat-ball.jpg?width=1200&format=pjpg&exif=0&iptc=0",
         "time": 180,
+        "totalPlayer": 9,
         "name": "Baseball"
     },
     {
         "id": "633468cba7349dbdef0c356c",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Field_hockey_at_the_2018_Summer_Youth_Olympics_%E2%80%93_Boys_Preliminary_Round_%E2%80%93_MAS-ARG_%28141%29.jpg/1200px-Field_hockey_at_the_2018_Summer_Youth_Olympics_%E2%80%93_Boys_Preliminary_Round_%E2%80%93_MAS-ARG_%28141%29.jpg",
         "time": 60,
+        "totalPlayer": 11,
         "name": "Hockey"
     }
 ]
