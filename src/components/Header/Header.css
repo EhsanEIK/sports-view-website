@@ -1,0 +1,16 @@
+header img {
+    width: 50px;
+}
+
+header span {
+    font-size: 30px;
+    font-weight: bold;
+    color: darkslateblue;
+    margin-left: 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
