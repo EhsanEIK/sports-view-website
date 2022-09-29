@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { addToDB } from '../../utilities/addDB';
+import React, { useEffect, useState } from 'react';
+import { addToDB, getDataFromDB } from '../../utilities/addDB';
 import Break from '../Break/Break';
 import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 import MyDetails from '../MyDetails/MyDetails';
@@ -10,6 +10,11 @@ const Sidebar = ({ listItems }) => {
         setBreakTime(time);
         addToDB('break-time', time);
     }
+
+    useEffect(() => {
+        const breakTime = getDataFromDB('break-time');
+        setBreakTime(breakTime);
+    }, []);
 
     return (
         <div className='position-sticky top-0 mt-5 mb-3'>

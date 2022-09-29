@@ -3,7 +3,7 @@ import React from 'react';
 const ExerciseDetails = ({ listItems, breakTime }) => {
     let totalTime = 0;
     for (const item of listItems) {
-        totalTime += item.time;
+        item.time ? totalTime += item.time : totalTime = item;
     }
 
     return (

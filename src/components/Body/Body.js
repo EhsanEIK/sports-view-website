@@ -6,6 +6,7 @@ import Sports from '../Sports/Sports';
 const Body = () => {
     const [sports, setSports] = useState([]);
     const [listItems, setListItems] = useState([]);
+
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -20,6 +21,15 @@ const Body = () => {
         totalTime += sport.time;
         addToDB('exercise-time', totalTime);
     }
+
+    useEffect(() => {
+        let exerciseTime = getDataFromDB('exercise-time');
+        if (exerciseTime) {
+            exerciseTime = [exerciseTime]
+            setListItems(exerciseTime);
+        }
+    }, []);
+
     return (
         <div className='container mt-5'>
             <div className='row'>
