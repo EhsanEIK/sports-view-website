@@ -1,6 +1,8 @@
 import React from 'react';
 
 const ExerciseDetails = ({ listItems, breakTime }) => {
+
+    // counted total exercise time and set the final value on totalTime variable
     let totalTime = 0;
     for (const item of listItems) {
         item.time ? totalTime += item.time : totalTime = item;

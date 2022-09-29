@@ -7,14 +7,15 @@ const Body = () => {
     const [sports, setSports] = useState([]);
     const [listItems, setListItems] = useState([]);
 
+    // loaded data from data.json file and set them on sports array using setSports()
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setSports(data));
     }, []);
 
+    // added sport in sports array and saved total exercise time to local storage
     const addToList = (sport) => {
-        // console.log(sport);
         const newList = [...listItems, sport];
         setListItems(newList);
         let totalTime = getDataFromDB('exercise-time');
@@ -22,6 +23,7 @@ const Body = () => {
         addToDB('exercise-time', totalTime);
     }
 
+    // retrieved exercise time from local storage and set the data on UI
     useEffect(() => {
         let exerciseTime = getDataFromDB('exercise-time');
         if (exerciseTime) {

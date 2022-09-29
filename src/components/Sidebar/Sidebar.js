@@ -6,14 +6,19 @@ import MyDetails from '../MyDetails/MyDetails';
 
 const Sidebar = ({ listItems }) => {
     const [breakTime, setBreakTime] = useState(0);
+
+    // added break time and saved break time to local storage
     const addToBreak = (time) => {
         setBreakTime(time);
         addToDB('break-time', time);
     }
 
+    // retrieved break time from local storage and set the data on UI
     useEffect(() => {
         const breakTime = getDataFromDB('break-time');
-        setBreakTime(breakTime);
+        if (breakTime) {
+            setBreakTime(breakTime);
+        }
     }, []);
 
     return (
