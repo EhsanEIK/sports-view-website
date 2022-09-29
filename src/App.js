@@ -1,14 +1,14 @@
 import './App.css';
 import Blogs from './components/Blogs/Blogs';
-import Body from './components/Body/Body';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import MiddleContent from './components/MiddleContent/MiddleContent';
 
 function App() {
   return (
     <div>
       <Header></Header>
-      <Body></Body>
+      <MiddleContent></MiddleContent>
       <Blogs></Blogs>
       <Footer></Footer>
     </div>

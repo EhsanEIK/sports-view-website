@@ -3,7 +3,7 @@ import { addToDB, getDataFromDB } from '../../utilities/addDB';
 import Sidebar from '../Sidebar/Sidebar';
 import Sports from '../Sports/Sports';
 
-const Body = () => {
+const MiddleContent = () => {
     const [sports, setSports] = useState([]);
     const [listItems, setListItems] = useState([]);
 
@@ -49,4 +49,4 @@ const Body = () => {
     );
 };
 
-export default Body;
+export default MiddleContent;
