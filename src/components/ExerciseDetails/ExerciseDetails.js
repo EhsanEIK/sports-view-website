@@ -11,18 +11,18 @@ const ExerciseDetails = ({ listItems, breakTime }) => {
     }
 
     // toastify message
-    const notify = () => toast.success("Congratzzz! Activity Completed");
+    const notify = () => toast.success("Congratzzz! Activity Completed")
 
     return (
         <div className='shadow-lg p-4 pe-3'>
-            <h4>Exercise Details</h4>
+            <h4>Practice Details</h4>
             <div className='mt-4'>
-                Exercise Time:
-                <span className='text-secondary'>  {totalTime ? totalTime : '00'} minutes</span>
+                Play Time :
+                <span className='text-secondary ms-2'> {totalTime ? totalTime : '00'} minutes</span>
             </div>
             <div className='mt-2'>
-                Break Time:
-                <span className='text-secondary'>  {breakTime ? breakTime : '00'} seconds</span>
+                Break Time :
+                <span className='text-secondary ms-2'> {breakTime ? breakTime : '00'} seconds</span>
             </div>
             <button onClick={notify} className='btn btn-primary rounded-2 w-100 mt-5'>Activity Completed</button>
             <ToastContainer></ToastContainer>
