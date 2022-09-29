@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ExerciseDetails = ({ listItems, breakTime }) => {
 
@@ -7,6 +9,9 @@ const ExerciseDetails = ({ listItems, breakTime }) => {
     for (const item of listItems) {
         item.time ? totalTime += item.time : totalTime = item;
     }
+
+    // toastify message
+    const notify = () => toast.success("Congratzzz! Activity Completed");
 
     return (
         <div className='shadow-lg p-4 pe-3'>
@@ -19,8 +24,9 @@ const ExerciseDetails = ({ listItems, breakTime }) => {
                 Break Time:
                 <span className='text-secondary'>  {breakTime ? breakTime : '00'} seconds</span>
             </div>
-            <button className='btn btn-primary rounded-2 w-100 mt-5'>Activity Completed</button>
-        </div>
+            <button onClick={notify} className='btn btn-primary rounded-2 w-100 mt-5'>Activity Completed</button>
+            <ToastContainer></ToastContainer>
+        </div >
     );
 };
 
