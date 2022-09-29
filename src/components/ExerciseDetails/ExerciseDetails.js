@@ -5,6 +5,7 @@ const ExerciseDetails = ({ listItems, breakTime }) => {
     for (const item of listItems) {
         totalTime += item.time;
     }
+
     return (
         <div className='shadow-lg p-4 pe-3'>
             <h4>Exercise Details</h4>

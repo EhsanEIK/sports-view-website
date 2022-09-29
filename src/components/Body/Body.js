@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { addToDB, getDataFromDB } from '../../utilities/addDB';
 import Sidebar from '../Sidebar/Sidebar';
 import Sports from '../Sports/Sports';
 
@@ -12,9 +13,12 @@ const Body = () => {
     }, []);
 
     const addToList = (sport) => {
-        console.log(sport);
+        // console.log(sport);
         const newList = [...listItems, sport];
         setListItems(newList);
+        let totalTime = getDataFromDB('exercise-time');
+        totalTime += sport.time;
+        addToDB('exercise-time', totalTime);
     }
     return (
         <div className='container mt-5'>
