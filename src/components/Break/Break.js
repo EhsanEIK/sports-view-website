@@ -2,7 +2,7 @@ import React from 'react';
 
 const Break = ({ handleAddToBreak }) => {
     return (
-        <div className='shadow-lg p-4 pe-2 mb-5'>
+        <div className='shadow-lg p-4 pe-3 mb-5'>
             <h4 className='mb-4'>Add a Break</h4>
             <div className='d-flex justify-content-center gap-3'>
                 <button onClick={() => handleAddToBreak('10')} className='bg-secondary text-white border-0 rounded-circle pe-auto p-1'>10<span>s</span></button>
