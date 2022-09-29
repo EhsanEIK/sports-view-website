@@ -11,7 +11,7 @@ const ExerciseDetails = ({ listItems, breakTime }) => {
     return (
         <div className='shadow-lg p-4 pe-3'>
             <h4>Exercise Details</h4>
-            <div className='mt-2'>
+            <div className='mt-4'>
                 Exercise Time:
                 <span className='text-secondary'>  {totalTime ? totalTime : '00'} minutes</span>
             </div>
